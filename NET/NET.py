@@ -1,4 +1,4 @@
-# Cloudflare stock analysis
+# Cloudflare stock analysis, last updated August 2021
 # 
 # visualize data for the year of 2020:
 # The distribution of the stock prices for the past year
@@ -11,7 +11,6 @@
 # 
 # Financial Data Source: [Yahoo Finance](https://finance.yahoo.com)
 # 
-#
 # Step 1
 # 
 # Import modules 
