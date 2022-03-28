@@ -82,6 +82,16 @@ plt.scatter(df[['building_age_yrs']], df[['rent']], alpha=0.4)
 plt.title("building age correlation with price")
 plt.show()
 
+# 1. Use the `.corr()` method on `df` to get the correlation matrix 
+
+import seaborn as sns
+
+correlation_matrix = df.corr()
+
+## Heatmap code:
+red_blue = sns.diverging_palette(220, 20, as_cmap=True)
+sns.heatmap(correlation_matrix, vmin = -1, vmax = 1, cmap=red_blue)
+plt.show()
 
 
 model=mlr.fit(x_train, y_train)
