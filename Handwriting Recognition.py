@@ -1,3 +1,6 @@
+# Handwriting recognition – Use of SKlearn clustering and KMeans machine learning model to predict numbers by reading handwriting
+# Use of KMeans algorithm to predict numbers by reading handwriting
+
 import numpy as np
 from matplotlib import pyplot as plt
 from sklearn import datasets

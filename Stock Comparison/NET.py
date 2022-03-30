@@ -1,19 +1,15 @@
-# Cloudflare stock analysis, last updated August 2021
-# 
+# Stock Comparison - Use of pandas, numpy and matplotlib to build a basic stock comparison analysis and visualization 
+
 # visualize data for the year of 2020:
 # The distribution of the stock prices for the past year
 # Cloudflare's earnings and revenue in the last four quarters
 # The actual vs. estimated earnings per share for the four quarters in 2020
 # A comparison of the Netflix Stock price vs Akamai (competitor) in 2020
-# 
+
 # During this project, I will analyze, prepare, and plot data. 
 # The visualizations will help the asses the financial risk of the Cloudflare stock.
-# 
+
 # Financial Data Source: [Yahoo Finance](https://finance.yahoo.com)
-# 
-# Step 1
-# 
-# Import modules 
 
 import matplotlib.pyplot as plt
 import pandas as pd

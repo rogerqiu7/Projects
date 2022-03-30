@@ -1,3 +1,5 @@
+# Rent Prediction – Use of Multiple Linear Regression machine learning model to predict Manhattan rent prices given inputs
+
 import pandas as pd
 
 # import the dataset

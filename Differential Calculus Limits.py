@@ -1,4 +1,4 @@
-# Differential Calculus: Limit Definition of the Derivative Exploration
+# Differential Calculus Limits - Proof of limits theory by using functions to visualize convergence of derivatives
 # Implementation differentiation function from scratch and explore how it aligns with the limit definition of the derivative.
 # Using matplotlib to check convergence of derivatives as h approaches 0
 

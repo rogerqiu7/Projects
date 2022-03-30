@@ -1,8 +1,8 @@
+# Law of Large Numbers - Use of hypothesis testing functions to build visualizations in proving the Law of Large numbers
+# as a sample size grows, its mean gets closer to the average of the whole population.
+
 import matplotlib.pyplot as plt
 import numpy as np
-
-# Law of Large Numbers:
-# as a sample size grows, its mean gets closer to the average of the whole population.
 
 def coin_flip_experiment():
   # defining our two coins as lists
