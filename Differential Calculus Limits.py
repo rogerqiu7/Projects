@@ -1,6 +1,6 @@
-# Differential Calculus Limits - Proof of limits theory by using functions to visualize convergence of derivatives
-# Implementation differentiation function from scratch and explore how it aligns with the limit definition of the derivative.
-# Using matplotlib to check convergence of derivatives as h approaches 0
+# Differential Calculus Limits - A visual proof of limits by using functions to visualize convergence of derivatives
+# Implementation of differentiation function from scratch and explore how it aligns with the limit definition of the derivative.
+# Using matplotlib to check convergence of derivatives as h in (f(x+h) - f(x))/h approaches 0
 
 import numpy as np
 from math import sin, cos, log, pi
@@ -80,6 +80,8 @@ plt.plot(x_vals, y_vals, label="True Derivative", linewidth=4)
 plt.show()
 plt.clf()
 
+# limit derivative appears to be approaching 1
+
 # f2 graph
 print("f2 approaching 4")
 # generate 200 samples between 1 and 10 
@@ -91,24 +93,29 @@ plt.plot(x_vals, y_vals, label="True Derivative", linewidth=4)
 plt.show()
 plt.clf()
 
+# limit derivative appears to be approaching 4
+
 # f1 graph
 print("f1 approaching 0.54")
 # generate 200 samples between 1 and 10 
 x_vals = np.linspace(1, 10, 200)
 # use f1 function on all x values
 y_vals = [sin(val) for val in x_vals]
-plt.figure(1)
 plt.plot(x_vals, y_vals, label="True Derivative", linewidth=4)
 plt.show()
 plt.clf()
 
+# limit derivative appears to be approaching 0.54
 
 # plot different approximated derivatives of f using limit definition of derivative
+# set x values as 200 points between 1 and 10
+# set h values at 10, 1, .25 and .01 to show convergence
 def plot_approx_deriv(f):
   x_vals = np.linspace(1, 10, 200)
   h_vals = [10, 1, .25, .01]
 
 # for values in h_vals, create derivative values from x values with the limit_derivative function from earlier
+# derivative values will plot y points for our charts 
   for h in h_vals:
       derivative_values = []
       for x in x_vals:
