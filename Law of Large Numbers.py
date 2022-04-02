@@ -16,7 +16,7 @@ def coin_flip_experiment():
   coin1_result = np.random.choice(coin1)
   coin2_result = np.random.choice(coin2)
  
-  # checking if both flips are heads
+  # checking if both flips are heads, return 1 if it is
   if coin1_result == 'Heads' and coin2_result == 'Heads':
     return 1
   else:
