@@ -75,7 +75,6 @@ print("f3 approaching 1 ")
 x_vals = np.linspace(1, 10, 200)
 # use f3 function on all x values
 y_vals = [pow(val,2) * log(val) for val in x_vals]
-plt.figure(1)
 plt.plot(x_vals, y_vals, label="True Derivative", linewidth=4)
 plt.show()
 plt.clf()
@@ -88,7 +87,6 @@ print("f2 approaching 4")
 x_vals = np.linspace(1, 10, 200)
 # use f2 function on all x values
 y_vals = [4*pow(val,3) for val in x_vals]
-plt.figure(1)
 plt.plot(x_vals, y_vals, label="True Derivative", linewidth=4)
 plt.show()
 plt.clf()
