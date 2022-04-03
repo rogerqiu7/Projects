@@ -1,5 +1,5 @@
 # Honey Production - Use of Simple Linear Regression machine learning model to predict honey production for future years
-# we are given a dataset (honeyproduction.csv) that 
+# we are given a dataset (honeyproduction.csv) that shows honey production stats per state
 
 import pandas as pd
 import matplotlib.pyplot as plt
