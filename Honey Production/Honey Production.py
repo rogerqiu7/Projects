@@ -33,8 +33,10 @@ y = prod_per_year["totalprod"]
 print("prod per year: " + str(y))
 
 # plot the scatter chart
+plt.xlabel("Year")
+plt.ylabel("Average Production")
 plt.scatter(x,y)
-plt.title("scatter of x and y")
+plt.title("scatter of Given X and Y")
 plt.show()
 
 # now to use linear regression to predict future years
@@ -52,9 +54,12 @@ print("Intercept is " + str(regr.intercept_))
 y_predict = regr.predict(x)
 print("y_predict:" + str(y_predict))
 
-# print linear regression with line of best fit
+# print linear regression with line of best fit to chart
 plt.plot(x,y_predict)
-# plt.show()
+plt.xlabel("Year")
+plt.ylabel("Average Production")
+plt.title("Line of Best fit from scatter chart")
+plt.show()
 
 # create future years
 x_future = np.array(range(2013, 2050))
@@ -68,10 +73,16 @@ x_future = x_future.reshape(-1,1)
 future_predict = regr.predict(x_future)
 # print(future_predict)
 
-# comment out all previous plots to show final plot
-# added a line in yea 2042 to show predicted production
+# plot scatter along with current and predicted future production line of best fit
+# added a line in year 2042 to show predicted production
+plt.plot(x,y_predict)
+plt.xlabel("Year")
+plt.ylabel("Average Production")
+plt.scatter(x,y)
 plt.plot(x_future, future_predict)
-plt.axvline(2042, color="red")
+plt.axvline(2042, color="red", label="2042")
+plt.title("Predicted future honey production")
+plt.legend(loc=8)
 plt.show()
 
 # flatten function to turn arrays back to list so interp can read it
