@@ -89,9 +89,10 @@ plt.show()
 flattened_x = x_future.flatten()
 flattened_y = future_predict.flatten()
 
+# now to find the intersection point
 # given year, predict production value
 year = 2042
 prod_by_year = np.interp(year, flattened_x , future_predict)
-print("Estimated production for year " + str(year) + " is " + str(prod_by_year))
+print("Estimated honey production for year " + str(year) + " is " + str(prod_by_year) + " pounds")
 # estimated production is 892,970 pounds of honey
 
