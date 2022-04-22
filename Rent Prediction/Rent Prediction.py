@@ -53,14 +53,13 @@ mlr = LinearRegression()
 model = mlr.fit(x_train.values, y_train.values)
 
 # create new room with following criterias for attributes and features such as 2 bedroom, 2 bath, 1200 sqft
-given_attributes = [[2, 2, 1200, 10, 10, 50, 1, 0, 1, 0, 0, 1, 1, 0]]
+given_attributes = [[2, 2, 1200, 10, 4, 20, 1, 0, 1, 0, 0, 1, 1, 0]]
 
 # predict y (rent) given all of x values (apartment attributes)
 predicted_rent = mlr.predict(given_attributes)
 
-# the predicted rent given y inputs, from x and y train fit
 print("The predicted rent is: $%.2f" % predicted_rent)
-# a whopping estimated $6801 monthly rent for the given attributes...
+# a whopping estimated $6801 monthly rent for the given attributes... 
 
 # for all the visualizations
 import matplotlib.pyplot as plt
@@ -172,7 +171,6 @@ plt.title('Residual Analysis')
 plt.show()
 # we can see the variation among predicted and actual prices as rent goes higher, it becomes harder to predict
 
-
 # finally, for the 3d chart
 from mpl_toolkits.mplot3d import Axes3D
 
@@ -207,5 +205,10 @@ ax.set_zlabel('Rent ($)')
 # Add the code below:
 plt.title("Rent based on sqft and building age")
 plt.show()
-# From how it appears, rent does increase with size but not necesarrily building age. 
+# From how it appears, rent does increase with size but not necesarrily building age.
+# 
+# # the predicted rent given y inputs, from x and y train fit
+
+print("The predicted rent is: $%.2f" % predicted_rent)
+# a whopping estimated $6801 monthly rent for the given attributes... 
 
