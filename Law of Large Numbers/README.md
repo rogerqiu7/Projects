@@ -1,15 +1,7 @@
-# Projects and description, sorted by most recent
+# 🔢 Law of Large Numbers 
+## Use of hypothesis testing functions to build visualizations in proving the Law of Large numbers
+- Used function to create 2 coins that randomly flip heads or tails
+- Counted the probability of two heads at the same time and measured it with the true probability of 0.25.
+- As Number of flips increased, experimental probability becomes closer to true probability.
+![image](https://user-images.githubusercontent.com/84350865/164947160-33bce34f-aaa7-495b-84d7-ab3328608636.png)
 
-- ✏️ Handwriting recognition – Use of KMeans clustering and SKlearn machine learning model to predict numbers by reading handwriting
-
-- 🔗 Blockchain Implementation – Use of Object-Oriented Programming to construct a blockchain with proof-of-work
-
-- 🏘️ Rent Prediction – Use of Multiple Linear Regression machine learning model to predict Manhattan rent prices given inputs
-
-- ♾️ Differential Calculus Limits - Proof of limits theory by using functions to visualize convergence of derivatives 
-
-- 🐝 Honey Production - Use of Simple Linear Regression machine learning model to predict honey production for future years
-
-- 🔢 Law of Large Numbers - Use of hypothesis testing functions to build visualizations in proving the Law of Large numbers
-
-- 💹 Basic Stock Analysis – Use of pandas, numpy and matplotlib to build a basic stock comparison analysis and visualization
