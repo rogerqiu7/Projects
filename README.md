@@ -13,3 +13,5 @@
 - 🔢 Law of Large Numbers - Use of hypothesis testing functions to build visualizations in proving the Law of Large numbers
 
 - 💹 Basic Stock Analysis – Use of pandas, numpy and matplotlib to build a basic stock comparison analysis and visualization
+
+new text
